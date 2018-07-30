@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "774266628839",
+    "firebase_url": "https://pt23-cb324.firebaseio.com",
+    "project_id": "pt23-cb324",
+    "storage_bucket": "pt23-cb324.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774266628839:android:d170f84620ce28c7",
+        "android_client_info": {
+          "package_name": "com.damgeo.pt23"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774266628839-vo1kuhem4i1kmbam0gk3v12b8tmi1qfd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.damgeo.pt23",
+            "certificate_hash": "37cb31bb8a8f5f67b74e1320fd2aa67a84bc3cea"
+          }
+        },
+        {
+          "client_id": "774266628839-q380c6qeaorg301oaspt32cd5k6l0itg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFTBQ9OYcLgyVZGfzju1bbYHMlZdrTnb0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774266628839-q380c6qeaorg301oaspt32cd5k6l0itg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
