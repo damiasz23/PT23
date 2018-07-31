@@ -11,7 +11,9 @@
     <Button
             android:text="Basketball"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="59dp"
-            tools:layout_editor_absoluteX="147dp" android:id="@+id/basketball"/>
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="59dp"
+            tools:layout_editor_absoluteX="147dp"
+            android:id="@+id/basketball"/>
 
 </LinearLayout>

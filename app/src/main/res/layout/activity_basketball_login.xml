@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".BasketballLoginActivity"
+        tools:context="com.damgeo.pt23.BasketballLoginActivity"
         android:orientation="vertical">
     <EditText android:layout_width="match_parent"
               android:layout_height="wrap_content"
