@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".BasketballLoginActivity">
         </activity>
+        <activity android:name=".MapActivity">
+        </activity>
     </application>
 
 </manifest>
