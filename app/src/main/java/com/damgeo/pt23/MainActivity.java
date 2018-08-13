@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         mBasketball = (Button) findViewById(R.id.basketball);
         mFootball = (Button) findViewById(R.id.football);
         mRunning = (Button) findViewById(R.id.running);
