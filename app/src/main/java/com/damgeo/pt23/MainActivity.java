@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mBasketball;
+    private Button mBasketball, mFootball;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         mBasketball = (Button) findViewById(R.id.basketball);
+        mFootball = (Button) findViewById(R.id.football);
 
         mBasketball.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,5 +28,17 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
         });
+
+        mBasketball.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, FootballLoginActivity.class);
+                startActivity(intent);
+                finish();
+                return;
+            }
+        });
     }
+
+
 }

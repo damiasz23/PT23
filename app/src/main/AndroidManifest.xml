@@ -43,6 +43,8 @@
                 android:name=".BasketballMapsActivity"
                 android:label="@string/title_activity_basketball_maps">
         </activity>
+        <activity android:name=".FootballLoginActivity">
+        </activity>
     </application>
 
 </manifest>

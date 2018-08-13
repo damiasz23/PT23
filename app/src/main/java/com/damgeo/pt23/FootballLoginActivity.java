@@ -16,8 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class BasketballLoginActivity extends AppCompatActivity {
-
+public class FootballLoginActivity extends AppCompatActivity {
 
     private EditText mEmail, mPasswoerd;
     private Button mLogin, mRegistration;
@@ -28,7 +27,7 @@ public class BasketballLoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_basketball_login);
+        setContentView(R.layout.activity_football_login);
 
         mAuth = FirebaseAuth.getInstance();
         firebaseAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -36,7 +35,7 @@ public class BasketballLoginActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 if (user != null){
-                    Intent intent = new Intent(BasketballLoginActivity.this, BasketballMapsActivity.class);
+                    Intent intent = new Intent(FootballLoginActivity.this, BasketballMapsActivity.class);
                     startActivity(intent);
                     finish();
                     return;
@@ -55,15 +54,15 @@ public class BasketballLoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 final String email = mEmail.getText().toString();
                 final String password = mPasswoerd.getText().toString();
-                mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(BasketballLoginActivity.this, new OnCompleteListener<AuthResult>() {
+                mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(FootballLoginActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (!task.isSuccessful()){
-                            Toast.makeText(BasketballLoginActivity.this, "sing up error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(FootballLoginActivity.this, "sing up error", Toast.LENGTH_SHORT).show();
 
                         }else{
                             String user_id = mAuth.getCurrentUser().getUid();
-                            DatabaseReference current_user_db = FirebaseDatabase.getInstance().getReference().child("Users").child("Basketball").child(user_id);
+                            DatabaseReference current_user_db = FirebaseDatabase.getInstance().getReference().child("Users").child("Football").child(user_id);
                             current_user_db.setValue(true);
 
                         }
@@ -76,11 +75,11 @@ public class BasketballLoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 final String email = mEmail.getText().toString();
                 final String password = mPasswoerd.getText().toString();
-                mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(BasketballLoginActivity.this, new OnCompleteListener<AuthResult>() {
+                mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(FootballLoginActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (!task.isSuccessful()) {
-                            Toast.makeText(BasketballLoginActivity.this, "sing in error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(FootballLoginActivity.this, "sing in error", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
