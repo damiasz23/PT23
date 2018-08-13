@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         mBasketball = (Button) findViewById(R.id.basketball);
         mFootball = (Button) findViewById(R.id.football);
+        mRunning = (Button) findViewById(R.id.running);
 
         mBasketball.setOnClickListener(new View.OnClickListener() {
             @Override
