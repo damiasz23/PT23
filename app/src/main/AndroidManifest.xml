@@ -45,6 +45,8 @@
         </activity>
         <activity android:name=".FootballLoginActivity">
         </activity>
+        <activity android:name=".RunningLoginActivity">
+        </activity>
     </application>
 
 </manifest>
